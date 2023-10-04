@@ -78,3 +78,56 @@ console.log(split2);
 //typeOf
 console.log(typeof(split));
 console.log(typeof(languages));
+
+//indexOf() and lastIndexOf()
+let myCountry = 'nigeria';
+console.log(myCountry.indexOf('i'));
+console.log(myCountry.lastIndexOf('i'));
+
+console.log(myCountry.indexOf('u')); //returns -1 since it can't be found in the string
+
+
+/* Number */
+
+//toString()
+let num = 20;
+let numString = num.toString();
+
+console.log(typeof(num));
+console.log(typeof(numString));
+
+//toFixed()
+let k = 32.446;
+let kFixed = k.toFixed(1);
+console.log(kFixed);
+
+//convert string to number
+console.log(Number('10'));
+console.log(typeof(Number('10')));
+
+console.log(Number(numString));
+
+let kk = '10.354'
+let kkfloat = parseFloat(kk); //gives a decimal conversion
+console.log(typeof(kkfloat));
+
+let kkint = parseInt(kk); //gives an integer conversion
+console.log(kkint)
+let str = 'good'
+console.log(Number(str));
+
+let strr = '30 good'
+console.log(Number(strr));
+
+//Boolean
+let n;
+
+if (2 > 3){
+n = true;
+}
+else{
+    n = false;
+}
+
+console.log(n);
+
