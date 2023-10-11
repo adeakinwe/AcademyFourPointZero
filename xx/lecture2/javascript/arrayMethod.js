@@ -56,3 +56,4 @@ let slicedCars = cars.slice(1,4); //gives a sub-array
 
 console.log(cars);
 console.log(slicedCars);
+
