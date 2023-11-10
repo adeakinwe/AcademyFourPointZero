@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Access JavaScript Object</h1>
+    <p id="data"></p>
+
+    <script>
+        const employee = {
+    name: "Bright",
+    age: 20,
+    cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+    ]
+}
+
+    let myData = "";
+
+    for (let i = 0; i < employee.cars.length; i++) {
+        myData += employee.cars[i].name + "<br>";
+        for (let j=0; j < employee.cars[i].models.length; j++){
+            myData += employee.cars[i].models[j] + "<br>"
+        }
+    }
+
+    document.getElementById("data").innerHTML = myData;
+    </script>
+</body>
+</html>
