@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Intro to Js</title>
+    <script>
+        alert("Intro to JS");
+    </script>
+</head>
+<body>
+    <h2>Intro to Javascript</h2>
+    <p>Demonstrating usage of getElementById</p>
+    <div id="myDiv">
+
+    </div><br>
+    <button onclick="changeToGreen()">Green Div</button>
+    <button onclick="changeToRed()">Red Div</button>
+    <script>
+        function changeToGreen(){
+            document.getElementById('myDiv').innerHTML = "Change my colour to green";
+            document.getElementById('myDiv').style.color = 'green';
+            document.getElementById('myDiv').style.margin ='30px'
+            document.getElementById('myDiv').style.fontSize ='40px'
+        }
+    </script>
+</body>
+</html>
