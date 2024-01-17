@@ -11,12 +11,14 @@
 </head>
 <body>
     <h2>Intro to Javascript</h2>
-    <p>Demonstrating usage of getElementById</p>
+    <p id="para">Demonstrating usage of getElementById</p>
     <div id="myDiv">
 
     </div><br>
     <button onclick="changeToGreen()">Green Div</button>
     <button onclick="changeToRed()">Red Div</button>
+    <button onclick="changeParaColour()">Change Colour</button>
+    <hr>
     <script>
         function changeToGreen(){
             document.getElementById('myDiv').innerHTML = "Change my colour to green";
@@ -24,6 +26,14 @@
             document.getElementById('myDiv').style.margin ='30px'
             document.getElementById('myDiv').style.fontSize ='40px'
         }
+
+        function changeParaColour(){
+            document.getElementById('para').style.color = 'pink';
+        }
+
+        document.write('displaying javascript with document.write');
+        window.alert('displaying message with an alert');
+        console.log('logging items....')
     </script>
 </body>
 </html>
