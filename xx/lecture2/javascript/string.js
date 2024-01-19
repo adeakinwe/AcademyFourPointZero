@@ -49,3 +49,29 @@ console.log(lower.toLowerCase());
 let j = 'Good', k = 'Morning', l = 'Nigeria';
 let greeting = j.concat(' ', k, ' ', l);
 console.log(greeting);
+
+//trim
+let str = " Good morning student ";
+let str2 = str.trim();
+console.log(str2);
+
+//split
+let split = "welcome to Angular class";
+let splittedtoArray = split.split(" ");
+console.log(splittedtoArray);
+
+console.log(typeof(splittedtoArray));
+let isThisAnArray = Array.isArray(splittedtoArray);
+console.log(isThisAnArray);
+
+//indexOf
+console.log(str2.indexOf('i'));
+console.log(str2.indexOf('i'));
+console.log(str2.lastIndexOf('o'));
+
+//boolean
+let aa = 10;
+let ab = 12;
+
+console.log(aa == ab);
+console.log(aa <= ab);
