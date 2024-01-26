@@ -3,6 +3,7 @@ monthsOfTheYear.push('Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','O
 console.log(monthsOfTheYear);
 
 let presentMonth = monthsOfTheYear.indexOf('July');
+console.log(presentMonth);
 
 switch(presentMonth){
     case 0:
